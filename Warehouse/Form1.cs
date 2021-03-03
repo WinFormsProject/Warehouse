@@ -42,66 +42,54 @@ namespace Warehouse
         private void LoadData()
         {
             string query = "SELECT Name,Quantity,CostPrice,DeliveryDate,SupplierId,CategoryId FROM Goods";
-            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
-            conn.Close();
         }
         private void maxQuantity_Click(object sender, EventArgs e)
         {
             string query = "SELECT Name,Quantity,CostPrice,DeliveryDate FROM Goods WHERE Quantity IN (SELECT MAX(Quantity) FROM Goods)";
-            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
-            conn.Close();
         }
 
         private void minQuantity_Click(object sender, EventArgs e)
         {
             string query = "SELECT Name,Quantity,CostPrice,DeliveryDate FROM Goods WHERE Quantity IN (SELECT MIN(Quantity) FROM Goods)";
-            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
-            conn.Close();
         }
 
         private void minCostPrice_Click(object sender, EventArgs e)
         {
             string query = "SELECT Name,Quantity,CostPrice,DeliveryDate FROM Goods WHERE CostPrice IN (SELECT MIN(CostPrice) FROM Goods)";
-            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
-            conn.Close();
         }
 
         private void maxCostPrice_Click(object sender, EventArgs e)
         {
             string query = "SELECT Name,Quantity,CostPrice,DeliveryDate FROM Goods WHERE CostPrice IN (SELECT MAX(CostPrice) FROM Goods)";
-            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
-            conn.Close();
         }
 
         private void oldestProd_Click(object sender, EventArgs e)
         {
             string query = "SELECT TOP (1) Name,Quantity,CostPrice,DeliveryDate FROM Goods ORDER BY DeliveryDate";
-            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
-            conn.Close();
         }
 
         private void showAllSupp_Click(object sender, EventArgs e)
@@ -156,12 +144,10 @@ namespace Warehouse
         {
             string query = "Select c.Name as [Product Category], AVG(g.Quantity) as [Average quantity of goods]" +
                 "from Categories c join Goods g on c.Id = g.CategoryId group by c.Name";
-            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
-            conn.Close();
         }
 
         private void suppList_SelectedIndexChanged(object sender, EventArgs e)
