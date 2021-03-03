@@ -97,6 +97,7 @@ namespace Warehouse
             this.groupBox2.Controls.Add(this.categList);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox2.ForeColor = System.Drawing.Color.MintCream;
             this.groupBox2.Location = new System.Drawing.Point(0, 83);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(354, 598);
@@ -121,6 +122,7 @@ namespace Warehouse
             // showAllSupp
             // 
             this.showAllSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showAllSupp.ForeColor = System.Drawing.Color.Green;
             this.showAllSupp.Location = new System.Drawing.Point(75, 188);
             this.showAllSupp.Name = "showAllSupp";
             this.showAllSupp.Size = new System.Drawing.Size(195, 51);
@@ -132,6 +134,7 @@ namespace Warehouse
             // showAllCateg
             // 
             this.showAllCateg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showAllCateg.ForeColor = System.Drawing.Color.Green;
             this.showAllCateg.Location = new System.Drawing.Point(75, 473);
             this.showAllCateg.Name = "showAllCateg";
             this.showAllCateg.Size = new System.Drawing.Size(195, 71);
@@ -164,7 +167,8 @@ namespace Warehouse
             // avgQuantity
             // 
             this.avgQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.avgQuantity.Location = new System.Drawing.Point(124, 473);
+            this.avgQuantity.ForeColor = System.Drawing.Color.Green;
+            this.avgQuantity.Location = new System.Drawing.Point(116, 473);
             this.avgQuantity.Name = "avgQuantity";
             this.avgQuantity.Size = new System.Drawing.Size(249, 71);
             this.avgQuantity.TabIndex = 7;
@@ -175,6 +179,7 @@ namespace Warehouse
             // minQuantity
             // 
             this.minQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.minQuantity.ForeColor = System.Drawing.Color.Green;
             this.minQuantity.Location = new System.Drawing.Point(189, 386);
             this.minQuantity.Name = "minQuantity";
             this.minQuantity.Size = new System.Drawing.Size(138, 39);
@@ -186,6 +191,7 @@ namespace Warehouse
             // maxQuantity
             // 
             this.maxQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.maxQuantity.ForeColor = System.Drawing.Color.Green;
             this.maxQuantity.Location = new System.Drawing.Point(8, 386);
             this.maxQuantity.Name = "maxQuantity";
             this.maxQuantity.Size = new System.Drawing.Size(138, 39);
@@ -205,6 +211,7 @@ namespace Warehouse
             this.groupBox4.Controls.Add(this.maxQuantity);
             this.groupBox4.Controls.Add(this.minQuantity);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.ForeColor = System.Drawing.Color.Honeydew;
             this.groupBox4.Location = new System.Drawing.Point(354, 83);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(872, 598);
@@ -215,6 +222,7 @@ namespace Warehouse
             // showAllGoods
             // 
             this.showAllGoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showAllGoods.ForeColor = System.Drawing.Color.Green;
             this.showAllGoods.Location = new System.Drawing.Point(488, 473);
             this.showAllGoods.Name = "showAllGoods";
             this.showAllGoods.Size = new System.Drawing.Size(249, 71);
@@ -226,6 +234,7 @@ namespace Warehouse
             // oldestProd
             // 
             this.oldestProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.oldestProd.ForeColor = System.Drawing.Color.Green;
             this.oldestProd.Location = new System.Drawing.Point(722, 386);
             this.oldestProd.Name = "oldestProd";
             this.oldestProd.Size = new System.Drawing.Size(138, 39);
@@ -237,6 +246,7 @@ namespace Warehouse
             // maxCostPrice
             // 
             this.maxCostPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.maxCostPrice.ForeColor = System.Drawing.Color.Green;
             this.maxCostPrice.Location = new System.Drawing.Point(545, 386);
             this.maxCostPrice.Name = "maxCostPrice";
             this.maxCostPrice.Size = new System.Drawing.Size(138, 39);
@@ -248,6 +258,7 @@ namespace Warehouse
             // minCostPrice
             // 
             this.minCostPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.minCostPrice.ForeColor = System.Drawing.Color.Green;
             this.minCostPrice.Location = new System.Drawing.Point(365, 386);
             this.minCostPrice.Name = "minCostPrice";
             this.minCostPrice.Size = new System.Drawing.Size(138, 39);
