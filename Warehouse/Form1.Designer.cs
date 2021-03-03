@@ -30,6 +30,8 @@ namespace Warehouse
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,6 +59,7 @@ namespace Warehouse
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -202,6 +205,7 @@ namespace Warehouse
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.showAllGoods);
             this.groupBox4.Controls.Add(this.oldestProd);
             this.groupBox4.Controls.Add(this.maxCostPrice);
@@ -269,11 +273,23 @@ namespace Warehouse
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(3, 20);
             this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(866, 341);
             this.dataGridView1.TabIndex = 1;

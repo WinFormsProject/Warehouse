@@ -42,10 +42,12 @@ namespace Warehouse
         private void LoadData()
         {
             string query = "SELECT Name,Quantity,CostPrice,DeliveryDate,SupplierId,CategoryId FROM Goods";
+            conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataSet dataSet = new DataSet();
             da.Fill(dataSet);
             dataGridView1.DataSource = dataSet.Tables[0];
+            conn.Close();
         }
         private void maxQuantity_Click(object sender, EventArgs e)
         {
